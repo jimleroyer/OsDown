@@ -47,7 +47,6 @@ def download_subtitle(subtitle):
 
 
 def extract_videos(compressed_file):
-    #with open(compressed_file, "rb") as fh:
     # Select the right API to extract the files out of the archive.
     klass = extract_dict[file_ext(compressed_file)]
     archive = klass(compressed_file)
